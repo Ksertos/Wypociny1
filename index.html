@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wypociny</title>
+</head>
+<body>
+  <div class="w-full h-screen flex justify-center items-center bg-slate-300">
+    <div class="w-[1000px] h-[800px] bg-white rounded-3xl px-12 flex flex-col justify-center gap-y-8">
+      <h1 class="font-bold text-xl">Payment details</h1>
+        <div class="flex flex-col justify-center w-3/6 gap-y-2">
+          <label for="email" class="font-normal text-lg text-slate-500">Email address</label>
+          <input type="email" placeholder="Enter your email" id="email" class="border-2 py-4 px-4 rounded-xl font-normal text-lg focus:outline-none focus:border-sky-600 focus:bg-slate-100">
+        </div>
+        <div class="flex flex-col justify-center w-3/6 gap-y-2">
+          <label for="ccn" class="font-normal text-lg text-slate-500">Credit Card Number</label>
+          <input type="tel" placeholder="xxxx xxxx xxxx xxxx" id="ccn" class="border-2 py-4 px-4 rounded-xl font-normal text-lg focus:outline-none focus:border-sky-600 focus:bg-slate-100 tracking-[10px]">
+        </div>
+        <div class="w-3/6 flex flex-row gap-x-6 ">
+          <div class="flex flex-col justify-center w-3/6 gap-y-2">
+            <label for="ccn" class="font-normal text-lg text-slate-500">Expire Date</label>
+            <input type="tel" placeholder="mm/yy" id="ccn" class="border-2 py-4 px-4 rounded-xl font-normal text-lg focus:outline-none focus:border-sky-600 focus:bg-slate-100 tracking-[6px]">
+          </div>
+          <div class="flex flex-col justify-center w-3/6 gap-y-2">
+            <label for="ccn" class="font-normal text-lg text-slate-500">CVV</label>
+            <input type="tel" placeholder="xxx" id="ccn" class="border-2 py-4 px-4 rounded-xl font-normal text-lg focus:outline-none focus:border-sky-600 focus:bg-slate-100 tracking-[10px]">
+          </div>
+        </div>
+        <div class="flex flex-row gap-x-4">
+          <input type="checkbox" id="checkbox" class="h-6 w-6">
+          <label for="checkbox">I've a promo code</label>
+        </div>
+        <div class="flex flex-col gap-y-5 p">
+        <div class="flex flex-row justify-between w-3/6">
+          <h2 class="text-base text-slate-500">Subtotal</h2>
+          <h2 class="text-black font-bold">$96</h2>
+        </div>
+        <div class="flex flex-row justify-between w-3/6 border-b-2 pb-4">
+          <h2 class="text-base text-slate-500">Platform Fee</h2>
+          <h2 class="text-black font-bold">$4</h2>
+        </div>
+        <div class="flex flex-row justify-between w-3/6">
+          <h2 class="text-base text-slate-500">Total Amount</h2>
+          <h2 class="text-black font-bold text-xl">$100</h2>
+        </div>
+        <div>
+          <button class="bg-blue-600 text-white w-3/6 py-5 rounded-xl hover:bg-blue-400 active:bg-blue-300">Make payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
