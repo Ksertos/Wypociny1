@@ -6,52 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Wypociny</title>
+  <title>Strona</title>
 </head>
 <body>
   <div class="w-full h-screen flex justify-center items-center bg-slate-300">
-    <div class="w-[1000px] h-[800px] bg-white rounded-3xl px-12 flex flex-col justify-center gap-y-8">
-      <h1 class="font-bold text-xl">Payment details</h1>
-        <div class="flex flex-col justify-center w-3/6 gap-y-2">
-          <label for="email" class="font-normal text-lg text-slate-500">Email address</label>
-          <input type="email" placeholder="Enter your email" id="email" class="border-2 py-4 px-4 rounded-xl font-normal text-lg focus:outline-none focus:border-sky-600 focus:bg-slate-100">
+    <div class="w-[1000px] h-[750px] bg-white rounded-3xl px-12 flex flex-col justify-center">
+      <h1 class="font-bold text-3xl">Get started</h1>
+      <h2 class="text-s pt-4 pb-10 text-gray-500">Create your account now</h2>
+      <div class="flex flex-col justify-center w-1/2">
+        <label for="fname" class="text-sm text-gray-500 py-2">Full name</label>
+        <input class="py-4 px-3 bg-white rounded-xl border-2 border-gray-200 mb-3 focus:outline-none focus:border-blue-400 focus:bg-slate-100" type="text" placeholder="Your name" id="fname">
         </div>
-        <div class="flex flex-col justify-center w-3/6 gap-y-2">
-          <label for="ccn" class="font-normal text-lg text-slate-500">Credit Card Number</label>
-          <input type="tel" placeholder="xxxx xxxx xxxx xxxx" id="ccn" class="border-2 py-4 px-4 rounded-xl font-normal text-lg focus:outline-none focus:border-sky-600 focus:bg-slate-100 tracking-[10px]">
-        </div>
-        <div class="w-3/6 flex flex-row gap-x-6 ">
-          <div class="flex flex-col justify-center w-3/6 gap-y-2">
-            <label for="ccn" class="font-normal text-lg text-slate-500">Expire Date</label>
-            <input type="tel" placeholder="mm/yy" id="ccn" class="border-2 py-4 px-4 rounded-xl font-normal text-lg focus:outline-none focus:border-sky-600 focus:bg-slate-100 tracking-[6px]">
+        <div class="flex flex-col justify-center w-1/2">
+          <label for="email" class="text-sm text-gray-500 py-2">Email</label>
+          <input class="py-4 px-3 bg-white rounded-xl border-2 border-gray-200 mb-3 focus:outline-none focus:border-blue-400 focus:bg-slate-100" type="email" placeholder="Your email" id="email">
           </div>
-          <div class="flex flex-col justify-center w-3/6 gap-y-2">
-            <label for="ccn" class="font-normal text-lg text-slate-500">CVV</label>
-            <input type="tel" placeholder="xxx" id="ccn" class="border-2 py-4 px-4 rounded-xl font-normal text-lg focus:outline-none focus:border-sky-600 focus:bg-slate-100 tracking-[10px]">
+          <div class="flex flex-col w-1/2">
+            <label for="password" class="text-sm text-gray-500 py-2">Password</label>
+            <input class="py-4 px-3 bg-white rounded-xl border-2 border-gray-200 mb-3 focus:outline-none focus:border-blue-400 focus:bg-slate-100" type="password" placeholder="Your password" id="password">     
           </div>
-        </div>
-        <div class="flex flex-row gap-x-4">
-          <input type="checkbox" id="checkbox" class="h-6 w-6">
-          <label for="checkbox">I've a promo code</label>
-        </div>
-        <div class="flex flex-col gap-y-5 p">
-        <div class="flex flex-row justify-between w-3/6">
-          <h2 class="text-base text-slate-500">Subtotal</h2>
-          <h2 class="text-black font-bold">$96</h2>
-        </div>
-        <div class="flex flex-row justify-between w-3/6 border-b-2 pb-4">
-          <h2 class="text-base text-slate-500">Platform Fee</h2>
-          <h2 class="text-black font-bold">$4</h2>
-        </div>
-        <div class="flex flex-row justify-between w-3/6">
-          <h2 class="text-base text-slate-500">Total Amount</h2>
-          <h2 class="text-black font-bold text-xl">$100</h2>
-        </div>
-        <div>
-          <button class="bg-blue-600 text-white w-3/6 py-5 rounded-xl hover:bg-blue-400 active:bg-blue-300">Make payment</button>
-        </div>
+          <div>
+            <button class="w-1/2 bg-indigo-700 text-white p-4 rounded-[10px] hover:bg-indigo-500 active:bg-indigo-300 mt-6">Sing Up</button>
+          </div>
+          <div class="flex flex-row justify-center w-1/2 mt-20">
+            <h3 class="text-gray-500 pr-2">Have an account?</h3><a href="https://www.facebook.com/profile.php?id=100008224265196" target="_blank" class="text-indigo-700 font-bold hover:underline">Login</a>
+          </div>
+      </div>
+      <div>
       </div>
     </div>
-  </div>
+  </div> 
 </body>
 </html>
